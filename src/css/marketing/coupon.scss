@@ -1,0 +1,87 @@
+$primary: #cea160;
+$font-family-base: '微軟正黑體', sans-serif;
+//按鈕樣式
+
+.marketing .nav-link {
+  color: #78605c;
+  background-color: #fff3e0;
+  padding: 10px 15px;
+  border: #858585 solid 0.1px;
+  font-family: '微軟正黑體';
+  font-weight: bold;
+  font-size: 20px;
+}
+.marketing .nav-link:hover {
+  background-color: #b2a190;
+  color: #ffffff;
+}
+.marketing-nav {
+  background-color: #fff3e0;
+  width: 30vw;
+  border: #858585 solid 1px;
+}
+.marketing .coupon-box {
+  width: 45vw;
+  height: 200px;
+  //   min-width: 250px;
+  border: solid #000000 1px;
+  justify-content: center;
+}
+.marketing .coupon-box button {
+  width: 80px;
+}
+.couponcode {
+  max-width: 35vw;
+}
+.couponlistnav .nav-link {
+  color: #78605c;
+  //   background-color: #fff3e0;
+  padding: 15px 20px;
+  border: #bebebe solid 1px;
+  font-family: '微軟正黑體';
+  font-weight: bold;
+  font-size: 20px;
+  //   margin: 0px 0.25px;
+}
+.couponlistnav .nav-link:hover {
+  //   background-color: #b2a190;
+  //   color: #ffffff;
+  border-top: #b2a190 solid 10px;
+  border-bottom: #ffffff 1px solid;
+}
+.couponlistnav .nav-link.active {
+  border-top: #b2a190 solid 10px;
+  border-bottom: #ffffff 1px solid;
+}
+.marketingcoupon {
+  text-align: center;
+}
+.CouponList1,
+.CouponList2,
+.CouponList3 {
+  display: none;
+}
+.CouponList1.active,
+.CouponList2.active,
+.CouponList3.active {
+  display: table;
+}
+.couponcode .CouponBtn {
+  padding-bottom: 5px;
+}
+.CouponDescription {
+  margin: 20px;
+}
+h3.CouponDescription,
+h4.CouponDescription {
+  color: $primary;
+}
+.CouponExpired {
+  color: #e92525;
+}
+.couponeventImg {
+  // width: 550px;
+  height: 300px;
+  object-fit: cover;
+  margin: 15px auto;
+}

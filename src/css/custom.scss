@@ -1,0 +1,569 @@
+// 修改變數專用
+//定義顏色
+$primary: #cea160;
+// $primary: #c9964f;
+$secondary: #8f8f8f;
+$success: #54ad84;
+$info: #34a3be;
+$warning: #facc00;
+$danger: #c04a68;
+$light: #eeeeee;
+$dark: #000000;
+$body-color: #495057;
+//字型
+$font-size-base: 0.96rem;
+$font-family-base: 'Roboto', 'Noto Sans TC', sans-serif;
+//按鈕樣式
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 1.25rem;
+$btn-padding-y-sm: 0.5rem;
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-lg: 1.25rem;
+$btn-padding-x-lg: 1.875rem;
+$btn-border-radius: 0;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;
+//表單樣式
+$input-padding-y: 0.5rem;
+$input-padding-x: 1rem;
+// $input-padding-y-sm: ;
+// $input-padding-x-sm: ;
+// $input-padding-y-lg: ;
+// $input-padding-x-lg: ;
+// $input-border-color: ;
+$input-border-radius: 0;
+$input-placeholder-color: #aaaaaa;
+$input-focus-border-color: $primary;
+$custom-checkbox-indicator-border-radius: 0;
+$custom-file-button-bg: $info;
+$custom-file-button-color: #ffffff;
+//表單驗證
+$form-feedback-valid-color: $success;
+$form-feedback-invalid-color: $danger;
+$form-feedback-icon-valid-color: rgba(0, 0, 0, 0);
+$form-feedback-icon-invalid-color: rgba(0, 0, 0, 0);
+//navbar
+$dropdown-border-radius: 0;
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-x: 2rem;
+//breadcrumb
+$breadcrumb-bg: transparent;
+//list-group
+$list-group-border-radius: 0;
+$list-group-item-padding-y: 1rem;
+$list-group-item-padding-x: 1.5rem;
+//modal
+$modal-inner-padding: 1rem 2rem;
+$modal-content-border-color: transparent;
+$modal-header-border-color: transparent;
+$modal-content-border-radius: 0;
+$modal-backdrop-opacity: 0.7;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+/* -----google font----- */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300|Roboto&display=swap');
+
+/* -----default setting----- */
+html,
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // color: #495057;
+}
+a,
+a:link {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.App-logo {
+  width: 90px;
+  pointer-events: none;
+}
+// btn
+.btn-primary,
+.btn-primary:disabled,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-outline-primary:not(:disabled):hover {
+  color: #ffffff;
+}
+.btn-theme {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-theme:not(:disabled):hover {
+  color: #ffffff;
+  background-color: #c59043;
+  border-color: #c08a3b;
+}
+.btn-theme-reverse {
+  color: #ffffff;
+  background-color: #c59043;
+  border-color: #c08a3b;
+}
+.btn-theme-reverse:not(:disabled):hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-outline-theme {
+  color: #000000;
+  border-color: #000000;
+}
+.btn-outline-theme:not(:disabled):hover {
+  color: #ffffff;
+  background-color: #c59043;
+  border-color: #c08a3b;
+}
+.btn-outline-theme1 {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn-outline-theme1:not(:disabled):hover {
+  color: #ffffff;
+  background-color: #c59043;
+  border-color: #c08a3b;
+}
+.btn-outline-light {
+  color: #cccccc;
+  border-color: #cccccc;
+}
+.btn-theme:disabled,
+.btn-theme-reverse:disabled {
+  color: #ffffff;
+}
+//form
+.invalid-feedback {
+  font-size: 90%;
+}
+//modal
+.modal .modal-header {
+  border-radius: 0;
+}
+//loading-spinner
+section.body {
+  min-height: 50vh;
+  position: relative;
+
+  .loading-spinner {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* -----header----- */
+header .navbar {
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .navbar .navbar-collapse {
+  position: absolute;
+  top: 60px;
+  background: #ffffff;
+  z-index: 9;
+  width: 100%;
+  left: 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+@media (min-width: 768px) {
+  header .navbar .navbar-collapse {
+    position: static;
+    background: transparent;
+    padding: 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0);
+    overflow-y: unset;
+    max-height: none;
+  }
+}
+
+header .navbar-toggler {
+  border: 0;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+  color: $body-color;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+header .navbar-light .navbar-nav .nav-link:hover,
+header .navbar-light .nav-menu .active > .nav-link,
+header .navbar-light .nav-menu .nav-link.active,
+header .navbar-light .nav-menu .nav-link.show,
+header .navbar-light .nav-menu .show > .nav-link {
+  color: $primary;
+}
+
+header .navbar-light .nav-menu .nav-link:not(.dropdown-toggle)::after,
+header .navbar-light .nav-menu .nav-link.dropdown-toggle::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 0px;
+  transition: width 0.5s;
+  background: $primary;
+  margin: 0 auto;
+}
+header .navbar-light .nav-menu .nav-link:not(.dropdown-toggle):hover::after {
+  width: 0px;
+}
+header .dropdown-menu.show {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: $light;
+}
+.dropdown-divider {
+  border-top: 1px solid #cccccc;
+}
+//nav-link dropdownmenu
+header .navbar-light .navbar-nav .nav-link > .dropdown-menu {
+  display: none;
+  // position: absolute;
+  // right: 20px;
+  // width: 120px; */
+  transform: translate(-100px, -5px);
+}
+header .navbar-light .navbar-nav .nav-link:last-child > .dropdown-menu {
+  transform: translate(-120px, -5px);
+}
+header .navbar-light .navbar-nav .nav-link:hover > .dropdown-menu {
+  position: absolute;
+  display: block;
+  border-color: transparent;
+  box-shadow: 0px 2px 10px -2px rgba(0, 0, 0, 0.3);
+}
+header .navbar-light .navbar-nav .nav-link > .dropdown-menu a {
+  color: $body-color;
+  text-align: left;
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+}
+header .navbar-light .navbar-nav .nav-link > .dropdown-menu a:active {
+  color: #ffffff;
+}
+header .navbar-light .navbar-nav .nav-link > .dropdown-menu a .badge {
+  margin-left: 5px;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+header .navbar-light .navbar-nav .nav-link > .icon.icon-unread::before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  background: #c04a68;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  header .navbar-light .nav-menu .nav-link.active:not(.dropdown-toggle)::after,
+  header .navbar-light .nav-menu .nav-link:not(.dropdown-toggle):hover::after,
+  header .navbar-light .nav-menu .nav-link.dropdown-toggle:hover::before {
+    width: 100%;
+  }
+  //dropdown
+  header .navbar-light .nav-menu .nav-link.dropdown-toggle {
+    transform: translateY(-1px);
+  }
+  header .navbar-light .nav-menu .nav-link.dropdown-toggle::before {
+    // position: absolute;
+    // top: 29px;
+    transform: translateY(22px);
+  }
+  header .dropdown-menu.show {
+    box-shadow: 0px 2px 10px -2px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    background: #ffffff;
+  }
+}
+
+header .nav-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+header .nav-icon > a.nav-link {
+  padding: 0.5rem;
+}
+/* -----footer----- */
+footer {
+  background: #b2a190;
+  // background: #ab9987;
+  padding: 2rem 0;
+  color: #ffffff;
+  ul.footer-menu > li {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    .header {
+      justify-content: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 0.5rem;
+      .icon {
+        font-size: 0.8rem;
+        margin-left: 0.5rem;
+        position: absolute;
+        right: 10%;
+        opacity: 0%;
+        transition: 0.5s;
+        transform: rotateX(0deg);
+      }
+      .icon.active {
+        opacity: 100%;
+        transform: rotateX(180deg);
+      }
+    }
+    .list-item {
+      max-height: 6px;
+      overflow: hidden;
+      transition: 0.5s;
+      &.expanded {
+        min-height: auto;
+        height: 100%;
+        max-height: 1000px;
+        overflow: visible;
+        transition: 0.5s;
+      }
+      &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.4);
+        width: 85%;
+        margin: 5px auto 10px;
+      }
+      li {
+        margin-bottom: 0.8rem;
+        a {
+          color: #eeeeee;
+          font-size: 0.9rem;
+          display: inline-block;
+          &:hover {
+            color: #ffffff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    ul.footer-menu > li {
+      max-width: auto;
+      .header {
+        justify-content: start;
+        .icon {
+          right: 15%;
+        }
+      }
+    }
+  }
+}
+
+footer ul.footer-menu,
+footer ul.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul.footer-menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer ul.footer-menu > li {
+  flex: 1 0 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  // font-size: 0.9rem;
+}
+
+footer .App-logo path,
+footer .App-logo circle {
+  fill: #ffffff;
+}
+
+footer .copy-right {
+  font-size: 0.8rem;
+  color: #eeeeee;
+}
+
+@media (min-width: 768px) {
+  footer ul.footer-menu {
+    flex-direction: row;
+    text-align: left;
+  }
+  footer ul.footer-menu > li {
+    flex: 1 0 0%;
+  }
+  footer ul.footer-menu ul.list-item::before {
+    margin: 5px 0 10px;
+  }
+}
+
+//-----修改公版樣式-----
+section.body {
+  //首頁
+  .home {
+    .kNBmiK {
+      padding: 0;
+      margin: 0;
+    }
+    .eRBBXn {
+      grid-template-columns: repeat(3, 100%);
+    }
+    .carousel {
+      .sc-EHOje > div {
+        div {
+          position: relative;
+          .title {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #000000;
+            transform: translateY(-50%);
+            width: 100%;
+            padding: 0 3rem;
+            .btn {
+              align-self: flex-start;
+            }
+          }
+          @media (min-width: 768px) {
+            .title {
+              font-size: 4rem;
+            }
+          }
+        }
+        div:nth-child(1) {
+          .title {
+            top: 65%;
+            .btn {
+              align-self: flex-start;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .title {
+              top: 50%;
+              padding: 0 10rem;
+            }
+          }
+        }
+
+        div:nth-child(2) {
+          .title {
+            text-align: right;
+            top: 30%;
+            .btn {
+              align-self: flex-end;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .title {
+              top: 50%;
+            }
+          }
+        }
+
+        div:nth-child(3) {
+          .title {
+            text-align: right;
+            top: 20%;
+            .btn {
+              align-self: flex-end;
+            }
+          }
+
+          @media (min-width: 768px) {
+            .title {
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+  //會員登入
+  .MemberLogin {
+    .login-container #exampleInputAccount1,
+    .login-container #exampleInputPassword1,
+    .login-container .register {
+      font-size: 1rem;
+      border-radius: 0;
+    }
+    background: url(../images/_custom/login-bg.jpg);
+    background-size: cover;
+    display: flex;
+    .container {
+      .login-container {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 5rem auto;
+        .login {
+          width: 100%;
+          height: auto;
+          position: static;
+          padding: 2rem;
+          background: rgba(255, 255, 255, 0.8);
+          transform: none;
+          figure.logo img {
+            width: 100%;
+            max-width: 200px;
+            transform: none;
+          }
+          form {
+            width: 100%;
+            transform: none;
+            // transform: translate(0, 50px);
+            .form-group:nth-child(2) {
+              position: relative;
+              img.show,
+              img.hide {
+                top: -5px;
+                left: 90%;
+              }
+            }
+            .register,
+            .login-btn {
+              margin: 0.5rem 0;
+              border-radius: 0;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

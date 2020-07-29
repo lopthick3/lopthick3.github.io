@@ -1,0 +1,50 @@
+.member-register {
+  margin-bottom: -70px;
+  transform: translate(0px, 0px);
+  .side_dog {
+    height: 1000px;
+    // opacity: 80%;
+  }
+  .register_container {
+    transform: translate(180px, 50px);
+  }
+  .form-group {
+    label {
+      width: 80px;
+      transform: translateY(14px);
+      font-size: 20px;
+    }
+    input,
+    select {
+      height: 60px;
+      // background: #ebebeb9a;
+      border: none;
+      border-bottom: solid 2px #e2e2e2;
+      // border-radius: 6px;
+    }
+  }
+  .text-container {
+    margin-bottom: 30px;
+  }
+
+  .register_submit {
+    border-radius: 6px;
+  }
+  .form {
+  }
+
+  @media screen and (max-width: 1000px) {
+    transition: 1s;
+    .imgContainer {
+      // position: absolute;
+      opacity: 40%;
+      img {
+        min-width: 900px;
+        height: auto;
+      }
+    }
+    .register_container {
+      position: absolute;
+    }
+  }
+}

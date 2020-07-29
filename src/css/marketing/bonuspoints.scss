@@ -1,0 +1,53 @@
+.bonuspoints .nav-link {
+  color: #78605c;
+  background-color: #fff3e0;
+  padding: 10px 25px;
+  border: #858585 solid 0.1px;
+  font-family: '微軟正黑體';
+  font-weight: bold;
+  font-size: 20px;
+}
+.bonuspoints .nav-link:hover {
+  background-color: #b2a190;
+  color: #ffffff;
+}
+
+.bonuspoints-nav {
+  background-color: #fff3e0;
+  width: 30vw;
+  border: #858585 solid 1px;
+}
+
+.bonuspoints-value {
+  text-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  color: #78605c;
+  font-family: '微軟正黑體';
+  font-weight: bold;
+  font-size: 20px;
+}
+.marketing-bp-imgbox {
+  text-align: center;
+}
+.marketing-bp-img {
+  width: 550px;
+  height: 200px;
+  object-fit: cover;
+  margin: 15px auto;
+}
+.bonuspoints-totalitems {
+  font-size: 20px;
+  color: #78605c;
+}
+.bonuspoints-select {
+  max-width: 200px;
+}
+.bp-card-img {
+  height: 190px;
+  object-fit: contain;
+}
+.bp-list-card {
+  border: none;
+  background-color: #fff3e0;
+}

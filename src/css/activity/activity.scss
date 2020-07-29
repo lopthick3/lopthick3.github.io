@@ -1,0 +1,204 @@
+//活動主頁
+.activity-main {
+  ul {
+    padding-left: 0px;
+  }
+  ul li {
+    list-style: none;
+  }
+  .jumbotron {
+    height: 400px;
+    background-image: url(../../images/activity/activity-banner.png);
+    background-size: cover;
+  }
+  .event-icon {
+    /* max-width: 300px; */
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .event-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .event-btn {
+    right: 0px;
+    bottom: 0px;
+  }
+
+  .icon-dropdown-menu {
+    margin: 0px auto;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: none;
+    transition: 3s;
+    height: 150px;
+    width: 500px;
+    z-index: 2;
+    left: 27%;
+    top: -10px;
+    // transform: translateY(-20px);
+  }
+  .icon-dropdown-menu1.active {
+    display: block;
+  }
+  .icon-dropdown-menu2.active {
+    display: block;
+  }
+  .icon-dropdown-menu3.active {
+    display: block;
+  }
+  .icon-dropdown-menu4.active {
+    display: block;
+  }
+
+  .new-activity {
+    .card-img-top {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card .card-date {
+      font-size: 12px;
+      font-weight: 600;
+      vertical-align: middle;
+    }
+  }
+
+  .card-icon-clock img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+//課程頁面
+.activity-class {
+  .left-right-container {
+    position: relative;
+
+    .class-left {
+      .classPic {
+        width: 100%;
+        height: 350px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .class-right {
+      .right-sticky {
+        // position: -webkit-sticky;
+        // position: sticky;
+        // top: 5px;
+      }
+
+      .title {
+        margin-bottom: 20px;
+      }
+      .price {
+        font-size: 30px;
+        font-weight: 500;
+        color: #c8a36a;
+      }
+      .activity-info {
+        .info-item {
+          margin-bottom: 13px;
+        }
+        .info-title {
+          color: #929295;
+        }
+      }
+    }
+  }
+}
+
+//活動收藏頁面
+.activity-like {
+  .card {
+    margin-bottom: 20px;
+  }
+  .like-img {
+    width: 100%;
+    height: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .icon-heart {
+    width: 40px;
+    height: 40px;
+    // border: 1px solid black;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//講座頁面
+.activity-lecture {
+  .left-right-container {
+    position: relative;
+
+    .lecture-left {
+      .lecturePic {
+        width: 100%;
+        height: 350px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .lecture-right {
+      // .right-sticky {
+      //   position: -webkit-sticky;
+      //   position: sticky;
+      //   top: 5px;
+      // }
+
+      .title {
+        margin-bottom: 20px;
+      }
+      .price {
+        font-size: 30px;
+        font-weight: 500;
+        color: #c8a36a;
+      }
+      .activity-info {
+        .info-item {
+          margin-bottom: 13px;
+        }
+        .info-title {
+          color: #929295;
+        }
+      }
+    }
+  }
+}
+
+//優惠活動頁面
+.activity-sale {
+  background-color: whitesmoke;
+  figure {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding: 30px 100px;
+    .info-content {
+      font-size: 21px;
+      // font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,255 @@
+//產品列表卡片
+.WNQ {
+  .card {
+    animation-name: card;
+    animation-duration: 0.3s;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    left: -2px;
+    top: -2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn {
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 283.98px;
+    height: 300.66px;
+    object-fit: contain;
+  }
+}
+
+@keyframes card {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
+}
+
+//產品小卡
+.WNQcard {
+  .card {
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    left: -2px;
+    top: -2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn {
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 205.48px;
+    height: 221.47px;
+    object-fit: contain;
+  }
+}
+
+//產品卡片促銷
+.WNQsale {
+  .card {
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    left: -2px;
+    top: -2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn {
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 253px;
+    height: 266px;
+    object-fit: contain;
+  }
+}
+
+//產品細節
+.detail {
+  .col-md-10 {
+    animation-name: detail;
+    animation-duration: 0.5s;
+  }
+
+  .image {
+    cursor: zoom-in;
+    max-width: 350px;
+    max-height: 350px;
+    object-fit: contain;
+  }
+
+  .btn {
+    border-radius: 5px;
+  }
+  .like {
+    color: rgb(32, 120, 244);
+  }
+
+  .dislike {
+    color: rgb(243, 62, 88);
+  }
+}
+
+@keyframes detail {
+  from {
+    opacity: 0;
+    margin-top: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0%;
+  }
+}
+
+//購物車
+.cart {
+  .btn {
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+  }
+
+  .ad {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+//願望清單
+.list {
+  .btn {
+    border-radius: 5px;
+  }
+
+  img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+  }
+
+  .ad {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+//modal改不動
+.modal-open {
+  padding-right: 0;
+}
+
+.sticky-top {
+  padding-right: 0;
+}
+
+//商品側欄
+.sidebar {
+  a {
+    animation-name: sidebar;
+    animation-duration: 0.8s;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  a:hover {
+    background-color: #b2a190;
+    opacity: 0.5;
+  }
+
+  .selected {
+    opacity: 0.5;
+  }
+}
+
+@keyframes sidebar {
+  from {
+    opacity: 0;
+    left: 160px;
+  }
+
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+//商品評論
+.productComment {
+  .like {
+    color: rgb(32, 120, 244);
+  }
+
+  .dislike {
+    color: rgb(243, 62, 88);
+  }
+}

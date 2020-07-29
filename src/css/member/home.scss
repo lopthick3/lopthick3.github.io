@@ -1,0 +1,206 @@
+.all-container {
+  max-width: 100%;
+  margin: 15px auto;
+  // font-family: '微軟正黑體';
+}
+
+/* nav */
+
+.pet-service .box-container .box {
+  width: 250px;
+  height: 200px;
+  border: black 1px solid;
+}
+
+.pet-service-img {
+  width: 350px;
+  height: 200px;
+  border: black 1px solid;
+  background-size: cover;
+}
+
+.pet-service-img1 {
+  background: url(../../images/index/pet-service-img1.jpg);
+  background-size: cover;
+}
+
+.pet-service-img2 {
+  background: url(../../images/index/pet-service-img2.jpg);
+  background-size: cover;
+}
+
+.daily-essentials .box {
+  width: 250px;
+  height: 150px;
+  border: black 1px solid;
+
+  /* background-size: cover; */
+}
+
+.daily1 {
+  background: url(../../images/index/daily1.jpg);
+  background-size: cover;
+}
+
+.daily2 {
+  background: url(../../images/index/daily2.jpg);
+  background-size: cover;
+}
+
+.daily3 {
+  background: url(../../images/index/daily3.jpg);
+  background-size: cover;
+}
+
+.daily4 {
+  background: url(../../images/index/daily4.jpg);
+  background-size: cover;
+}
+
+.daily5 {
+  background: url(../../images/index/daily5.jpg);
+  background-size: cover;
+}
+
+.daily6 {
+  background: url(../../images/index/daily6.jpg);
+  background-size: cover;
+}
+
+.daily7 {
+  background: url(../../images/index/daily7.jpg);
+  background-size: cover;
+}
+
+.daily8 {
+  background: url(../../images/index/daily8.jpg);
+  background-size: cover;
+}
+
+.ad .box {
+  width: 100%;
+  height: 360px;
+  background: blanchedalmond;
+}
+
+.ad1 {
+  background: url(../../images/index/ad1.jpg) center right;
+  background-size: cover;
+}
+
+.box-container {
+  .box1 {
+    width: 350px;
+    height: 200px;
+    border: black 1px solid;
+  }
+
+  .box2 {
+    width: 250px;
+    height: 150px;
+    border: black 1px solid;
+  }
+}
+
+.supplies1 {
+  background: url(../../images/index/sup1.jpg);
+  background-size: cover;
+}
+
+.supplies2 {
+  background: url(../../images/index/sup2.jpg);
+  background-size: cover;
+}
+
+.supplies3 {
+  background: url(../../images/index/sup3.jpg);
+  background-size: cover;
+}
+
+.supplies4 {
+  background: url(../../images/index/sup4.jpg);
+  background-size: cover;
+}
+
+.supplies5 {
+  background: url(../../images/index/sup5.jpg);
+  background-size: cover;
+}
+
+.blog {
+  .box1 {
+    width: 280px;
+    height: 200px;
+    border: black 1px solid;
+  }
+
+  .box2 {
+    width: 250px;
+    height: 100px;
+    border: black 1px solid;
+  }
+
+  .box3 {
+    width: 200px;
+    height: 100px;
+    border: black 1px solid;
+  }
+}
+
+.blog1,
+.blog2,
+.blog3 {
+  background: url(../../images/index/blog3.jpg) center center;
+  background-size: cover;
+}
+
+/* header */
+
+.header {
+  max-width: 1920px;
+  height: 100px;
+  background: #b2a190;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+
+  ul {
+    list-style: none;
+
+    a {
+      color: black;
+    }
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+/* footer */
+
+.footer {
+  max-width: 1920px;
+  height: 400px;
+  background: #b2a190;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.719);
+
+  ul {
+    list-style: none;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  ul a {
+    color: rgba(255, 255, 255, 0.719);
+  }
+
+  hr {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.719);
+    height: 1px;
+  }
+}
